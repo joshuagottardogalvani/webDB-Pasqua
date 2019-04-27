@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XFactor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            margin: 15px;
+        }
+        .titolo {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titolo text-center">XFactor</h1>
+    
+    <form action="/jsp/cerca.jsp" method="get">
+        <div class="form-group">
+          <label for="usr">Inserisci stringa:</label>
+          <input type="text" name="ricerca" id="ricerca" class="form-control">
+        </div>
+        
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="campo" value="Nome">Nome
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="campo" value="Cognome">Cognome
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="campo" value="Email">Email
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="campo" value="Username">Username
+          </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">CERCA</button>
+    </form>
+</body>
+</html>
